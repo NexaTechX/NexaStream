@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+  <div class="register-container">
+    <h2>Create Your Account</h2>
+    <form id="register-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" required>
+
+      <button type="submit">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="js/auth-check.js"></script>
+</body>
+</html>

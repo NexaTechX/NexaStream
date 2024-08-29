@@ -1,0 +1,98 @@
+/* Register Page Styles */
+.register-container {
+    background-color: #2c3e50; /* Dark background for the form */
+    color: #ecf0f1; /* Light text */
+    padding: 2rem;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 10vh;
+  }
+  
+  .register-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #f39c12;
+  }
+  
+  .register-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .register-container label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .register-container input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-size: 1rem;
+  }
+  
+  .register-container button {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-container button:hover {
+    background-color: #2980b9;
+  }
+  
+  .register-container p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .register-container a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Styles for Register Page */
+  @media (max-width: 768px) {
+    .register-container {
+      max-width: 90%;
+      padding: 1.5rem;
+    }
+  
+    .register-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .register-container input, .register-container button {
+      font-size: 1rem;
+      padding: 0.7rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .register-container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .register-container input, .register-container button {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  }
+  
+  /* Additional Page-Specific Styles Below */
+  

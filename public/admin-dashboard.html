@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - NexaStream</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" id="menuToggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="navMenu" class="nav-menu">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-icon">
+            <i class="fas fa-home"></i>
+            <span class="tooltip">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="nav-icon">
+            <i class="fas fa-user"></i>
+            <span class="tooltip">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="watchlist.html" class="nav-icon">
+            <i class="fas fa-list"></i>
+            <span class="tooltip">Watchlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="movie-details.html" class="nav-icon">
+            <i class="fas fa-film"></i>
+            <span class="tooltip">Movie Details</span>
+          </a>
+        </li>
+        <li>
+          <a href="admin-dashboard.html" class="nav-icon active">
+            <i class="fas fa-cog"></i>
+            <span class="tooltip">Admin</span>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html" class="nav-icon">
+            <i class="fas fa-sliders-h"></i>
+            <span class="tooltip">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="admin-dashboard-section">
+      <h1>Admin Dashboard</h1>
+
+      <div class="admin-options">
+        <!-- Manage Users -->
+        <div class="admin-card">
+          <h2>Manage Users</h2>
+          <p>View, update, and delete user accounts.</p>
+          <button class="btn">Go to Users</button>
+        </div>
+
+        <!-- Manage Movies -->
+        <div class="admin-card">
+          <h2>Manage Movies</h2>
+          <p>Add, edit, or delete movie content on the platform.</p>
+          <button class="btn">Go to Movies</button>
+        </div>
+
+        <!-- Manage Watchlists -->
+        <div class="admin-card">
+          <h2>Manage Watchlists</h2>
+          <p>View user watchlists and handle related issues.</p>
+          <button class="btn">Go to Watchlists</button>
+        </div>
+
+        <!-- View Reports -->
+        <div class="admin-card">
+          <h2>View Reports</h2>
+          <p>Review platform usage reports and analytics.</p>
+          <button class="btn">Go to Reports</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 NexaTechX. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/auth-check.js"></script>
+
+</body>
+</html>

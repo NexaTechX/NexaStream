@@ -1,0 +1,238 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+}
+
+.menu-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+}
+
+.menu-toggle .bar {
+  height: 4px;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Off-screen initially */
+  height: 100%;
+  width: 80px;
+  background-color: #333;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 3rem;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-menu ul li {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  position: relative;
+}
+
+.nav-icon i {
+  font-size: 24px;
+}
+
+.tooltip {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #444;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-icon:hover .tooltip,
+.nav-icon:focus .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* When nav is active, slide-in effect */
+.nav-menu.active {
+  left: 0;
+}
+
+/* Auto-Close when clicking outside of the menu */
+body.menu-active {
+  overflow: hidden;
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none; /* Hide on larger screens */
+  }
+
+  .nav-menu {
+    position: static;
+    background-color: #333;
+    width: 100%; /* Full width for horizontal navigation */
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-menu ul li {
+    margin: 0;
+  }
+
+  .nav-menu ul li a {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .tooltip {
+    position: static;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    margin-left: 0.5rem;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+/* The Main Styling */
+/* General Reset for All Pages */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Style */
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Get Started Page Styles */
+.get-started-container {
+  text-align: center;
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.get-started-container:hover {
+  transform: scale(1.05);
+}
+
+.get-started-container h1 {
+  font-size: 2.5rem;
+  color: #f39c12;
+  margin-bottom: 1rem;
+}
+
+.get-started-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.get-started-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Responsive Design for Get Started Page */
+@media (max-width: 768px) {
+  .get-started-container h1 {
+    font-size: 2rem;
+  }
+
+  .get-started-container p {
+    font-size: 1rem;
+  }
+
+  .get-started-btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .get-started-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .get-started-container p {
+    font-size: 0.9rem;
+  }
+
+  .get-started-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
+
+/* Additional Page-Specific Styles Below */
+/* (Other styles for different pages like login, register, home, etc.) */
+

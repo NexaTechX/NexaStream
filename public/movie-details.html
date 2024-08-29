@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Details - NexaStream</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="menu-toggle" id="menuToggle">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <nav id="navMenu" class="nav-menu">
+      <ul>
+        <li>
+          <a href="index.html" class="nav-icon">
+            <i class="fas fa-home"></i>
+            <span class="tooltip">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html" class="nav-icon">
+            <i class="fas fa-user"></i>
+            <span class="tooltip">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="watchlist.html" class="nav-icon">
+            <i class="fas fa-list"></i>
+            <span class="tooltip">Watchlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="movie-details.html" class="nav-icon active">
+            <i class="fas fa-film"></i>
+            <span class="tooltip">Movie Details</span>
+          </a>
+        </li>
+        <li>
+          <a href="admin-dashboard.html" class="nav-icon">
+            <i class="fas fa-cog"></i>
+            <span class="tooltip">Admin</span>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html" class="nav-icon">
+            <i class="fas fa-sliders-h"></i>
+            <span class="tooltip">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <section class="movie-details-section">
+      <div class="movie-details-header">
+        <img src="images/movie-poster.png" alt="Movie Poster" class="movie-poster">
+        <div class="movie-details-info">
+          <h1>Movie Title</h1>
+          <p>Genre: Action, Adventure</p>
+          <p>Release Date: 2024</p>
+          <p>Duration: 2h 30m</p>
+          <button class="btn">Watch Now</button>
+          <button class="btn add-watchlist-btn">Add to Watchlist</button>
+        </div>
+      </div>
+
+      <div class="movie-description">
+        <h2>Description</h2>
+        <p>
+          This is an exciting action-packed movie that follows the journey of a hero on a quest to save the world. With stunning visual effects and an engaging storyline, this movie is sure to captivate audiences of all ages.
+        </p>
+      </div>
+
+      <div class="movie-cast">
+        <h2>Cast</h2>
+        <ul>
+          <li>Actor 1 as Character 1</li>
+          <li>Actor 2 as Character 2</li>
+          <li>Actor 3 as Character 3</li>
+        </ul>
+      </div>
+
+      <div class="movie-trailer">
+        <h2>Trailer</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sample_trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 NexaTechX. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/auth-check.js"></script>
+
+</body>
+</html>
